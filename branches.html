@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches | TAMARAW BEER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .w3-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 70px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-sizing: border-box;
+            margin-left: 70px;
+            overflow-x: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+            border-bottom: 2px solid #FFDD00;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+        }
+
+        .navigation a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #FFDD00;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: black;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .content {
+            flex-grow: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .branches, .managers {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: black;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .branches h2, .managers h2 {
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        .branches ul, .managers ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin: 0;
+        }
+
+        .branches ul li, .managers ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            flex-shrink: 0;
+            border-top: 2px solid #FFDD00;
+        }
+
+        .footer img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge">
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+    </div>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="LOGO.png" alt="Tamaraw Beer Logo">
+                </a>
+            </div>
+            <div class="navigation">
+                <a href="index.html"><b>Home</b></a>
+                <a href="#about-us-section" class="about-us-link">About Us</a>
+                <a href="#contact" class="contact-link">Contact</a>
+                <a href="branches.html"><b>Branches</b></a>
+                <a href="promotions.html">Promotions</a>
+            </div>
+        </div>
+
+        <div class="background">
+            <div class="content">
+                <div class="branches">
+                    <h2>Branch Locations</h2>
+                    <ul>
+                        <li>Ortigas Center, Pasig City - Contact: (123) 456-7890</li>
+                        <li>Makati City - Contact: (234) 567-8901</li>
+                        <li>BGC, Taguig City - Contact: (345) 678-9012</li>
+                        <li>Quezon City - Contact: (456) 789-0123</li>
+                        <li>Alabang, Muntinlupa City - Contact: (567) 890-1234</li>
+                    </ul>
+                </div>
+
+                <div class="managers">
+                    <h2>Branch Managers</h2>
+                    <ul>
+                        <li>John Doe - Ortigas Center</li>
+                        <li>Jane Smith - Makati City</li>
+                        <li>Michael Johnson - BGC</li>
+                        <li>Emily Brown - Quezon City</li>
+                        <li>David Lee - Alabang</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="LOGO.png" alt="Tamaraw Beer Logo">
+            <p><i>© 2024 Tamaraw Beer. All rights reserved.<br>10/F Tamaraw Plaza Building, Emerald Ave., Ortigas Center, Pasig City 1600</i></p>
+        </div>
+    </div>
+</body>
+</html>

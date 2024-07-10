@@ -1,0 +1,284 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black; 
+    color: white; 
+}
+
+.w3-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    margin-left: 70px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black; 
+    border-bottom: 2px solid #FFDD00; 
+}
+
+.header img {
+    width: 150px;
+    height: auto;
+}
+
+.navigation a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #FFDD00; 
+}
+
+.header-banner {
+    text-align: center;
+    padding: 0;
+    background: url('HEADER.png') no-repeat center center;
+    background-size: cover;
+    flex-shrink: 0;
+    height: 200px;
+}
+
+.intro-text-area {
+    text-align: center;
+    padding: 20px;
+    background-color: black; 
+    flex-shrink: 0;
+    color: white; 
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: black; 
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.box {
+    width: 32%;
+    background-color: black; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.banner-slot {
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.banner-slot:hover {
+    transform: translateY(-5px);
+}
+
+.banner-slot img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    flex-shrink: 0;
+    border-top: 2px solid #FFDD00;
+}
+
+.footer img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        margin-left: 0; 
+    }
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 10px 0;
+    }
+}
+
+.about-us {
+    display: none; 
+    background-color: black;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    text-align: justify;
+    line-height: 1.6;
+    color: white;
+}
+
+.contact {
+    background-color: black;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    text-align: center;
+    line-height: 1.6;
+    color: white;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #FFDD00;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: white;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: gold;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
